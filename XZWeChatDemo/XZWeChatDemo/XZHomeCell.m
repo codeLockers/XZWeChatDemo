@@ -9,8 +9,8 @@
 #import "XZHomeCell.h"
 #import <SDAutoLayout/SDAutoLayout.h>
 
-#define kDeleteBtnWidth 60.0f
-#define kTagBtnWidth    100.0f
+#define kDeleteBtnWidth 6.0f
+#define kTagBtnWidth    10.0f
 
 #define kShouldSlideX   -2
 

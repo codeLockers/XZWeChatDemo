@@ -7,15 +7,17 @@
 //
 
 #import "XZTimeLineViewController.h"
+#import "XZRefreshHeaderView.h"
 
-@interface XZTimeLineViewController ()
-
+@interface XZTimeLineViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic, strong) UITableView *tableView;
 @end
 
 @implementation XZTimeLineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self loadUI];
     // Do any additional setup after loading the view.
 }
 
@@ -24,14 +26,39 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Load_UI
+- (void)loadUI{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    [self loadTableView];
 }
-*/
 
+- (void)loadTableView{
+
+    self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.tableView.delegate =self;
+    self.tableView.dataSource = self;
+    
+    XZRefreshHeaderView *headerView = [[XZRefreshHeaderView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 275)];
+    self.tableView.tableHeaderView = headerView;
+    
+    [self.view addSubview:self.tableView];
+}
+
+#pragma mark - UITableView_Delegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+    return 5;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
+    if (!cell) {
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([UITableViewCell class])];
+    }
+    return cell;
+}
 @end

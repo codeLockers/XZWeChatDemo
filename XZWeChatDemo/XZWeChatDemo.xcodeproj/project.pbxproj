@@ -20,6 +20,7 @@
 		E92BCEAA1D85350000FAAC14 /* XZHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E92BCEA91D85350000FAAC14 /* XZHomeCell.m */; };
 		E92BCEAE1D85401200FAAC14 /* XZEyeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92BCEAD1D85401200FAAC14 /* XZEyeView.m */; };
 		E944ABD31DB369C50013900C /* XZChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E944ABD21DB369C50013900C /* XZChatViewController.m */; };
+		E9A8F4641DC5A825005A7D30 /* XZRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A8F4631DC5A825005A7D30 /* XZRefreshHeaderView.m */; };
 		E9C31D101DBB373A002FBF24 /* XZChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C31D0F1DBB373A002FBF24 /* XZChatCell.m */; };
 		E9C31D141DBB38BE002FBF24 /* XZChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C31D131DBB38BE002FBF24 /* XZChatModel.m */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,8 @@
 		E92BCEAD1D85401200FAAC14 /* XZEyeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEyeView.m; sourceTree = "<group>"; };
 		E944ABD11DB369C50013900C /* XZChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChatViewController.h; sourceTree = "<group>"; };
 		E944ABD21DB369C50013900C /* XZChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChatViewController.m; sourceTree = "<group>"; };
+		E9A8F4621DC5A825005A7D30 /* XZRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRefreshHeaderView.h; sourceTree = "<group>"; };
+		E9A8F4631DC5A825005A7D30 /* XZRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRefreshHeaderView.m; sourceTree = "<group>"; };
 		E9C31D0E1DBB373A002FBF24 /* XZChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChatCell.h; sourceTree = "<group>"; };
 		E9C31D0F1DBB373A002FBF24 /* XZChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChatCell.m; sourceTree = "<group>"; };
 		E9C31D121DBB38BE002FBF24 /* XZChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChatModel.h; sourceTree = "<group>"; };
@@ -203,6 +206,8 @@
 			children = (
 				E92BCEAC1D85401200FAAC14 /* XZEyeView.h */,
 				E92BCEAD1D85401200FAAC14 /* XZEyeView.m */,
+				E9A8F4621DC5A825005A7D30 /* XZRefreshHeaderView.h */,
+				E9A8F4631DC5A825005A7D30 /* XZRefreshHeaderView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 				E9C31D101DBB373A002FBF24 /* XZChatCell.m in Sources */,
 				E92BCEA61D850CA300FAAC14 /* XZTimeLineViewController.m in Sources */,
 				E92BCE7F1D85049A00FAAC14 /* AppDelegate.m in Sources */,
+				E9A8F4641DC5A825005A7D30 /* XZRefreshHeaderView.m in Sources */,
 				E92BCE7C1D85049A00FAAC14 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
